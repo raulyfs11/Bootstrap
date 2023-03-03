@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram PhotoFeed Using BootStrap</title>
+    <script src="https://kit.fontawesome.com/23aa97424d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar bg-body-tertiary container">
+    <div class="d-flex">
+      <a class="navbar-brand" href="#">
+        <p class=" m-2"> <i class="fa-brands fa-instagram" ></i>Instagram</p></a>                
+   </div> 
+  
+   <div class="dropdown ms-auto">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Profile</a></li>
+      <li><a class="dropdown-item" href="#">Accesibility</a></li>
+      <li><a class="dropdown-item" href="#">Privacy & Data</a></li>
+      <li><hr class="dropdown-divider"></li>
+     <li><a class="dropdown-item href="#"><span style="color:red">Sign out</span></a></li>
+    </ul>
+  </div>
+
+
+  <button type="button" class=" m-2 btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal">
+    Create a new post</button> 
+  <div class="modal fade ms-auto " id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <div class="form-group">
+                <label for="user-message" class="col-lg-2 control-label">Caption:
+                </label>
+                <div class="col-lg-10">    
+         <textarea name="user-message" id="user-message" cols="20"  rows="3" class="form-control" placeholder="Add the caption of your post here"></textarea>
+          </div>   
+            </div>
+              <i class="fas fa-camera fa-1x"></i>   
+              <i class="fas fa-map-marker-alt fa-1x"></i>
+          </form>
+          
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+   </div>
+    </div>
+
+   </nav>
+
+
+   <div class="container ">
+    <div class="well well-md">
+       <nav class="nav justify-content-center">
+            <div class="nav-link btn-md">            
+           <a href="#" id="list" class="btn btn-default btn-md data-bs-target" target="list"><span i class="fa-solid fa-table-cells">
+          </span></a>
+           <a href="#" id="grid" class="btn btn-default btn-md data-bs-target" target="grid"><span
+            i class="fa-solid fa-square"></i></span></a> </div> 
+        </nav>
+      </div>
+
+    
+      <div id="products" class="row list-group grid gap-3">   
+        <div class="item col-xs-4 col-lg-4" style="border: 1px solid gainsboro" >
+          <div class="thumbnail">          
+              <div class="caption">
+                <h4 class="group inner list-group-item-heading">
+                    Lorem, ipsum dolor sit</h4>
+                    <p class="text-end">1 of 12</p>    
+                    <img class="group list-group-image img-responsive" width="100%" src="https://integratedpain.org/wp-content/uploads/400x400.png" alt="" />
+         </div>         
+        <div class="caption">
+          <p class="group inner list-group-item-text"><strong>
+              210 Likes</strong></p>
+         <p class="group inner list-group-item-text text-justify">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sint enim rem natus repudiandae aliquam ut impedit eius! Sunt explicabo molestias adipisci laudantium repellendus eaque iure iste veritatis blanditiis ipsum?</p>
+            </div>
+           </div>
+        </div>
+    
+      
+  
+          <div class="item col-xs-4 col-lg-4" style="border: 1px solid gainsboro" >
+            <div class="thumbnail">          
+                <div class="caption">
+                  <h4 class="group inner list-group-item-heading">Lorem ipsum dolor sit</h4>
+            <p class="text-end"> 2 of 12</p> 
+            <img class="group list-group-image" width="100%" src="https://wwwmpa.mpa-garching.mpg.de/galform/cr/CR_TCDM_dump30_400_170000_12000_100_blue.gif" alt=""/>
+        </div>
+        <div class="caption">
+          <p class="group inner list-group-item-text"><strong>
+              496 Likes</strong></p>
+          <p class="group inner list-group-item-text text-justify">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus assumenda iure, alias rem facilis unde magni recusandae earum, officia nobis, itaque vitae fugiat culpa mollitia? Iste quasi nostrum officiis impedit?</p>
+        </div>
+      </div>
+   </div>
+
+
+     
+    <div class="item col-xs-4 col-lg-4" style="border: 1px solid gainsboro" >
+      <div class="thumbnail">          
+          <div class="caption">
+            <h4 class="group inner list-group-item-heading">
+                Lorem ipsum dolor sit</h4>
+            <p class="text-end">3 of 12</p> 
+            <img class="group list-group-image" width="100%" src="https://static.nationalgeographic.co.uk/files/styles/image_3200/public/m87_lo_april11_polarimetric_average_image_ml_deband-cc-8bit-srgb.jpg?w=400&h=400&q=75" alt=""/>
+        </div>
+        <div class="caption">
+            <p class="group inner list-group-item-text"><strong>
+                4766 Likes</strong></p>
+            <p class="group inner list-group-item-text text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eius consectetur numquam accusamus inventore ad tempore non eaque ut repudiandae corporis libero, expedita officia explicabo assumenda commodi nam quos sunt. </p>
+            </div>
+        </div>
+      </div>
+
+
+      
+        <div class="item col-xs-4 col-lg-4" style="border: 1px solid gainsboro" >
+          <div class="thumbnail">          
+              <div class="caption">
+                <h4 class="group inner list-group-item-heading">
+                    Lorem ipsum dolor sit</h4>
+                <p class="text-end">4 of 12</p> 
+            <img class="group list-group-image" width="100%" src="https://www.lonestardigital.com/EOS_D30/Sample_Pix/D30_Img_3771(400x400_Crop).jpg" alt=""/>
+        </div>
+        <div class="caption">
+            <p class="group inner list-group-item-text"><strong>
+                89 Likes</strong></p>
+            <p class="group inner list-group-item-text text-justify">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum perspiciatis blanditiis, aperiam non, consequuntur itaque deserunt dolorem nobis voluptatum accusamus aliquid quidem consectetur ratione cumque quis facilis tenetur. Suscipit, voluptate. </p>
+            </div>
+        </div>
+    </div>   
+         
+
+  
+      <div class="item col-xs-4 col-lg-4" style="border: 1px solid gainsboro" >
+        <div class="thumbnail">          
+            <div class="caption">
+              <h4 class="group inner list-group-item-heading">
+                Lorem ipsum dolor sit</h4>
+                <p class="text-end">5 of 12</p> 
+                <img class="group list-group-image" width="100%" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a0f14794-d139-4edf-8b9f-07053b24b754/d4wc7re-346bce20-8127-4722-ad21-a04c3bb8642b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EwZjE0Nzk0LWQxMzktNGVkZi04YjlmLTA3MDUzYjI0Yjc1NFwvZDR3YzdyZS0zNDZiY2UyMC04MTI3LTQ3MjItYWQyMS1hMDRjM2JiODY0MmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.J2UkaayEZEUU96gjRzmf6hxcZxc--YkFHR2EeGJ-t6w" alt=""/>
+          </div>
+            <div class="caption">
+                <p class="group inner list-group-item-text"><strong>
+                    35 Likes</strong></p>
+                <p class="group inner list-group-item-text text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestiae officia vel culpa error molestias, aspernatur sint vitae eos assumenda! Distinctio, voluptate ex. Non unde incidunt voluptatum? Voluptatem, harum consequuntur. </p>
+                </div>
+            </div>
+        </div>
+            
+ 
+       
+          <div class="item col-xs-4 col-lg-4" style="border: 1px solid gainsboro" >
+            <div class="thumbnail">          
+                <div class="caption">
+                  <h4 class="group inner list-group-item-heading">
+                    Lorem ipsum dolor sit </h4>
+                    <p class="text-end">6 of 12</p>
+              <img class="group list-group-image" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.jpg" alt=""/>
+            </div>
+            <div class="caption">
+                <p class="group inner list-group-item-text"><strong>
+                    7 Likes</p></strong>
+                <p class="group inner list-group-item-text text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quasi nostrum, reprehenderit minima doloribus iste ad rem atque corporis, quas nisi adipisci sed aliquam ratione, aperiam ex sequi accusamus cumque.</p>
+                </div>
+            </div>
+          </div>
+        
+
+  
+            <div class="item col-xs-4 col-lg-4" style="border: 1px solid gainsboro" >
+              <div class="thumbnail">          
+                  <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Lorem ipsum dolor, sit</h4>
+                        <p class="text-end">7 of 12</p>
+                  <img class="group list-group-image" width="100%" src="https://www.sccnewsbyte.co.uk/wp-content/uploads/2020/08/securitythumbnail400x400.png" alt=""/>
+                </div>
+                <div class="caption">
+                    <p class="group inner list-group-item-text"><strong>
+                        40 Likes</strong></p>
+                    <p class="group inner list-group-item-text text-justify">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur aliquid id, dignissimos deserunt eum dolore cupiditate omnis architecto ducimus nisi qui, molestias neque voluptatibus sunt iusto consequuntur, asperiores ex eveniet! </p>
+                    </div>
+                </div>
+              </div>
+             
+
+
+                <div class="item col-xs-4 col-lg-4" style="border: 1px solid gainsboro" >
+                  <div class="thumbnail">          
+                      <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Lorem ipsum, dolor sit</h4>
+                        <p class="text-end">8 of 12</p>
+                  <img class="group list-group-image" width="100%" src="http://omnident.com.tw/img/400x400/05.jpg" alt=""/>
+                </div>
+                <div class="caption">
+                    <p class="group inner list-group-item-text"><strong>
+                        680 Likes</strong></p>
+                    <p class="group inner list-group-item-text text-justify">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis atque consectetur necessitatibus commodi ex ipsa impedit esse odit, eligendi qui illum possimus accusantium consequatur unde. Voluptatibus blanditiis repudiandae ab deserunt? </p>
+                    </div>
+                </div>
+            </div>
+            
+          
+   
+              <div class="item col-xs-4 col-lg-4" style="border: 1px solid gainsboro" >
+                <div class="thumbnail">          
+                    <div class="caption">
+                      <h4 class="group inner list-group-item-heading">
+                        Lorem, ipsum dolor sit</h4>
+                        <p class="text-end">9 of 12</p>
+                  <img class="group list-group-image" width="100%" src="https://pbs.twimg.com/profile_images/1392473647760224256/S_WfrkQA_400x400.jpg" alt=""/>
+                </div>
+                <div class="caption">
+                    <p class="group inner list-group-item-text"><strong>
+                        1150 Likes</strong></p>
+                    <p class="group inner list-group-item-text text-justify">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime quia quos rerum illum. Excepturi quod recusandae veritatis? Suscipit placeat aliquid necessitatibus impedit et quis, id beatae. Enim, eveniet assumenda?</p>
+                          </div>
+                    </div>
+                </div>
+   
+</div>
+</div>
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
